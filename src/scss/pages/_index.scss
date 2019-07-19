@@ -1,43 +1,141 @@
 .start-block {
-  padding: 30px 0;
+  padding: 30px 0 50px;
+  background: url("./img/Rectangle_new.png") no-repeat;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-position: 50% 100%;
+   &:before{
+     content: '';
+     position: absolute;
+     width: 100%;
+     z-index: -2;
+     height: 100%;
+     background: #000;
+     opacity: 0.7;
+     top:0;
+
+   }
 }
 
-.title-block {
-  margin: 0 0 20px 0;
 
-  &_one {
-    font-size: 30px;
-    text-transform: uppercase;
-  }
-  &_two {
-    font-size: 25px;
-    max-width: 500px;
-  }
-}
 
 .parallax-card {
-  max-width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items:  flex-start;
 
   &__wrapper-img {
     position: relative;
-    overflow: hidden;
-    padding-bottom: 100%;
+   
   }
   &__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: none;
-    height: 100%;
-    min-width: 100.5%;
+  height: auto;
   }
   &__description {
-    background-color: rgb(79, 234, 255);
-    padding: 20px 10px;
-    text-align: center;
+    padding-left:20px;
+    text-align: left;
+    display: flex;
+    flex-flow: row wrap;
+    
   }
   &__paragraph {
-    margin: 0;
+    color: #ffffff;
+    padding-bottom: 59px;
+
+  }
+}
+
+.my-blog-block{
+  position: relative;
+  z-index: 1;
+  padding: 30px 0 50px;
+} 
+
+.wraper-blocks{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px;
+ 
+  &__block{
+    margin: 0 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.07);
+  }
+  &__description{
+    padding: 15px 20px 20px;
+  }
+  &__title{
+    font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+margin-bottom: 12px;
+  }
+  &__paragraph{
+  color: #000;
+  margin-bottom: 49px;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: flex-start;
+
+  }
+  &__data{
+    margin-left: 30px;
+    margin-top: 8px;
+  }
+}
+
+.wr-btn{
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.contact-block {
+  background: #FFE01B;
+  padding: 14px 0 15px;
+}
+
+.messenger-block{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px;
+  &__card{
+    display: block;
+    height: 191px;
+    padding: 0 10px 20px;
+    width:25%;
+  }
+  &__sprite{
+    position: relative;
+   
+    display: block;
+    height: 100%;
+    background-color: #343433;
+    transition: .25s;
+    &:before{
+      content: '';
+      background-image: url(./img/Sprite.svg);
+      background-repeat:no-repeat;
+      width: 110px;
+      height: 110px;
+     position: absolute;
+     left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    }
+    
+  }
+  &__sprite_vk:before{
+    background-position: 0 -71px;
+  }
+  &__sprite_ins:before{
+    background-position:-110px -71px;
+  }
+  &__sprite_ph:before{
+    background-position:-220px -71px;
+  }
+  &__sprite_mes:before{
+    background-position:-330px -71px;
   }
 }

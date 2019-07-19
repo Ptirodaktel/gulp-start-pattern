@@ -1,0 +1,98 @@
+.block-of-me-block{
+    padding: 30px 0 46px;
+    background: #F2F2F2;
+
+}
+
+.wraper-of-me-block{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items:  flex-start;
+    &__wrapper-img {
+        position: relative;
+       
+      }
+      &__img {
+      height: auto;
+      }
+
+    
+      &__description {
+        padding-left:20px;
+        text-align: left;
+        display: flex;
+        flex-flow: row wrap;
+        
+      }
+      &__name{
+        font-weight: bold;
+font-size: 45px;
+line-height: 61px;  
+display: block;
+padding-bottom: 20px;
+      }
+      &__status{
+          display: flex;
+          justify-content: flex-start;
+          margin: 49px -10px 0;
+      }
+     &__designation{
+         position: relative;
+         margin: 0 10px;
+         padding-left: 79px;
+         font-weight: bold;
+font-size: 24px;
+line-height: 33px;
+text-transform: uppercase;
+  &:before{
+    content: '';
+    background-image: url(./img/Sprite.svg);
+    background-repeat:no-repeat;
+    width: 71px;
+    height: 71px;
+   position: absolute;
+   left: -6px;
+    top: -25px;
+  }
+  
+     } 
+     .city::before{
+        background-position: 0 0;
+     }
+     .photo::before{
+        background-position: -71px 0 ;
+     }
+     .month::before{
+        background-position: -142px 0;
+     }
+}
+
+.galereya-block{
+    background: #F2F2F2;
+    padding-bottom: 50px;
+    &__content{
+ display: block;
+ margin: 0 -10px;
+    }
+  &__wrapper-img{
+      position: relative;
+      display: inline-block;
+      width: calc(33.33% - 20px);
+      box-sizing: border-box;
+      margin: 0 9px;
+      overflow: hidden;
+
+  }
+  &__wraper-text{
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+  }
+}
+.wr-btn-galery{
+    position: relative;
+    display:block;
+    text-align: center;
+    padding-top: 30px;
+}

@@ -28,3 +28,9 @@
   font-weight: 100;
   font-style: normal;
 }
+@font-face {
+  font-family: "Bebas";
+  src: url("./BebasNeue_Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
