@@ -1,0 +1,64 @@
+.animation-block{
+    padding: 20px 0;
+}
+
+.wraper-animation{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    &__img{
+        max-height: 200px;
+        top: 20px;
+    position: relative;
+    animation-name: superman;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    }
+    &__shadows{
+        border-bottom: 70px solid #000;
+        border-left: 20px solid transparent;
+        border-right: 30px solid transparent;
+        height: 0px;
+        margin: 0 auto;
+        width: 80px;
+        filter: drop-shadow(3px 9px 10px black);
+        transform: scaleY(.1);
+        opacity: 0.4;
+        animation-name: superman-shadows;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+    }
+    .superman-block{
+        width: 200px;
+    }
+
+}
+@keyframes superman{
+    0%{
+    top:20px;
+    }
+    50%{
+        top:-20px;
+        }
+        100%{
+            top:20px;
+            }   
+}
+@keyframes superman-shadows{
+    0%{
+        width: 80px;
+        opacity: 0.4;
+    }
+    50%{
+        width: 60px;
+        opacity: 0.2;
+        }
+        100%{
+            width: 80px;
+            opacity: 0.4;
+            }   
+}
