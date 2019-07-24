@@ -186,7 +186,7 @@
 
     }
     35%{
-        z-index: 2;
+        z-index: 1;
     }
     40%, 50%, 60%, 65%{
         
@@ -209,3 +209,183 @@
                 z-index:1;
             } 
 }
+
+
+.wrapper-img-boom{
+ position: relative;
+ width: 108px;
+   .supreman-boom{
+       height: 150px;
+       position: relative;
+       top: -500px;
+       opacity: 0;
+       animation-duration: 4s;
+       animation-timing-function: ease;
+       animation-delay: 0.5s;
+       animation-iteration-count: infinite;
+       animation-play-state: running;
+       animation-name: super-boom;
+   } 
+
+}
+
+@keyframes super-boom{
+    50%, 70%, 80% {
+        top:0px;
+ opacity: 1;}
+
+  80% {
+    opacity: 0;
+}
+100% {
+    top: -330px;
+    opacity: 0;
+}
+}
+
+.triangle{
+    position: absolute;
+    z-index: 20;
+    border-bottom: 16px solid #4bd3fd;
+    transform: rotate(18deg);
+    opacity: 0;  
+    bottom: 141px;
+    left: 60px;
+}
+
+.triangle0{
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-name: triangle0-anim;
+    border-left: 1px solid transparent;
+    border-right: 7px solid transparent;
+}
+@keyframes triangle0-anim{
+30%{
+    transform: rotate(450deg);
+    opacity: 1;
+    left: 40px;
+    bottom: 100px;
+}
+35% {
+    opacity: 0;
+}
+}
+.triangle1{
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-name: triangle1-anim;
+    border-left: 1px solid transparent;
+    border-right: 7px solid transparent;
+}
+@keyframes triangle1-anim{
+    30%{
+        transform: rotate(150deg);
+        opacity: 1;
+        left: 10px;
+        bottom: 120px;
+    }
+    35% {
+        opacity: 0;
+    }
+    }
+.triangle2{
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-name: triangle2-anim;
+    border-left: 1px solid transparent;
+    border-right: 7px solid transparent;
+}
+@keyframes triangle2-anim{
+    30%{
+        transform: rotate(350deg);
+        opacity: 1;
+        left: 130px;
+        bottom: 150px;
+    }
+    35% {
+        opacity: 0;
+    }
+    }
+.triangle3{
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-name: triangle3-anim;
+    border-left: 1px solid transparent;
+    border-right: 7px solid transparent;
+
+}
+@keyframes triangle3-anim{
+    30%{
+        transform: rotate(250deg);
+        opacity: 1;
+        left: 150px;
+        bottom: 80px;
+    }
+    35% {
+        opacity: 0;
+    }
+    }
+.triangle4{
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-name: triangle4-anim;
+    border-left: 1px solid transparent;
+    border-right: 7px solid transparent;
+}
+@keyframes triangle4-anim{
+    30%{
+        transform: rotate(50deg);
+        opacity: 1;
+        left: 110px;
+        bottom: 120px;
+    }
+    35% {
+        opacity: 0;
+    }
+    }
+.shadow-boom{
+    position: relative;
+    opacity: 0;
+    bottom: 33px;
+    left: 23px;
+    border-bottom: 70px solid #000;
+    border-left: 20px solid transparent;
+    border-right: 30px solid transparent;
+    height: 0px;
+    margin: 0 auto;
+    width: 130px;
+    filter: drop-shadow(3px 9px 10px black);
+    transform: scaleY(.1);
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-name: super-shadow-anim;
+}
+
+@keyframes super-shadow-anim{
+    50%, 60%, 70% {
+        width: 80px;
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        width: 130px;
+        opacity: 0;
+    }
+    }
